@@ -39,6 +39,7 @@ export const MainCardData = [
         Assignee: "Pravin",
       },
     ],
+    status: "Assign",
   },
   {
     Title: "In Progress",
@@ -80,6 +81,7 @@ export const MainCardData = [
         Assignee: "Pravin",
       },
     ],
+    status: "In Progress",
   },
   {
     Title: "Completed",
@@ -121,6 +123,7 @@ export const MainCardData = [
         Assignee: "Pravin",
       },
     ],
+    status: "Completed",
   },
   {
     Title: "Deployed",
@@ -162,6 +165,7 @@ export const MainCardData = [
         Assignee: "Pravin",
       },
     ],
+    status: "Deployed",
   },
   {
     Title: "Deffered",
@@ -172,35 +176,36 @@ export const MainCardData = [
         Priority: "P2",
         Description:
           "Deferred office renovation project due to budget constraints.",
-        Reason: "Budget limitations",
+        Assignee: "Pravin",
       },
       {
         Title: "Hiring Process",
         Priority: "P2",
         Description: "Deferred hiring new employees due to a hiring freeze.",
-        Reason: "Hiring freeze policy",
+        Assignee: "Pravin",
       },
       {
         Title: "Product Expansion",
         Priority: "P2",
         Description:
           "Deferred plans to expand product line due to market uncertainties.",
-        Reason: "Market uncertainties",
+        Assignee: "Pravin",
       },
       {
         Title: "Training Program",
         Priority: "P1",
         Description:
           "Deferred implementation of new employee training program due to resource constraints.",
-        Reason: "Resource constraints",
+        Assignee: "Pravin",
       },
       {
         Title: "Software Upgrade",
         Priority: "P1",
         Description:
           "Deferred planned software upgrade due to compatibility issues with existing systems.",
-        Reason: "Compatibility issues",
+        Assignee: "Pravin",
       },
     ],
+    status: "Deffered",
   },
 ];

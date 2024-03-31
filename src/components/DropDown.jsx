@@ -3,9 +3,9 @@ import React from "react";
 const DropDown = () => {
   return (
     <>
-      <div class="btn-group dropDowns">
+      <div className="btn-group dropDowns">
         <button
-          class="btn btn-secondary btn-sm dropdown-toggle dropDownButton"
+          className="btn btn-secondary btn-sm dropdown-toggle dropDownButton"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -19,19 +19,19 @@ const DropDown = () => {
         >
           Small button
         </button>
-        <ul class="dropdown-menu">
+        <ul className="dropdown-menu">
           <li>
-            <a class="dropdown-item" href="#">
+            <a className="dropdown-item" href="#">
               Action
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <a className="dropdown-item" href="#">
               Another action
             </a>
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <a className="dropdown-item" href="#">
               Something else here
             </a>
           </li>

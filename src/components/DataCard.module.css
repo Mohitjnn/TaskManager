@@ -1,7 +1,6 @@
-.Card {
-  height: 50rem
+.Body {
+  margin: 1rem 0rem;
 }
-
 
 .blue {
   background-color: #0d6efd;
@@ -10,4 +9,19 @@
   height: fit-content;
   padding: 3px;
   border-radius: 10%;
+}
+
+.desc {
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+}
+
+.Assignee {
+  font-size: medium;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.editButton {
+  padding: 0%;
 }
