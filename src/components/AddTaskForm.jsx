@@ -2,7 +2,7 @@ import React from "react";
 import AddTaskFormCss from "./AddTaskForm.module.css";
 const AddTaskForm = () => {
   return (
-    <div className={AddTaskFormCss.body}>
+    <div className={`backGroundColor ${AddTaskFormCss.body}`}>
       <header className={AddTaskFormCss.heading}>
         <h5>Add Task</h5>
       </header>

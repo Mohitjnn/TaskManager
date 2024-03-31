@@ -1,5 +1,9 @@
 import React from "react";
 import DataCardCss from "./DataCard.module.css";
+import Popup from "reactjs-popup";
+import DeleteCard from "./DeleteCard";
+import EditCard from "./EditCard";
+import "reactjs-popup/dist/index.css";
 
 const DataCard = ({ data, status }) => {
   return (
@@ -18,21 +22,35 @@ const DataCard = ({ data, status }) => {
           style={{ justifyContent: "space-between", alignItems: "start" }}
         >
           <p className={DataCardCss.Assignee}>@{data.Assignee}</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="white"
-            className={DataCardCss.blue}
-            transform="rotate(90)"
+          <Popup
+            trigger={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="white"
+                className={DataCardCss.blue}
+                transform="rotate(90)"
+              >
+                <path
+                  d="M5 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2ZM19 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2ZM12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"
+                  stroke="#d9e3f0"
+                  strokeWidth="1.5"
+                ></path>
+              </svg>
+            }
+            position="top center"
+            nested
           >
-            <path
-              d="M5 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2ZM19 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2ZM12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"
-              stroke="#d9e3f0"
-              strokeWidth="1.5"
-            ></path>
-          </svg>
+            {
+              <div className={DataCardCss.actionbuttonscontainer}>
+                <DeleteCard />
+                <div className={DataCardCss.border}></div>
+                <EditCard formData={data} status={status} />
+              </div>
+            }
+          </Popup>
         </div>
         <button class={`btn btn-primary`}>{status}</button>
       </div>
