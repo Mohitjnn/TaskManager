@@ -14,6 +14,14 @@ const DeleteCard = () => {
         <header className={DeleteCardCss.Header}>
           <h5>Delete</h5>
         </header>
+        <span>Do You Wish To Delete The Task</span>
+        <div className="flexRow" style={{ justifyContent: "space-between" }}>
+          <h5>Task 1</h5>
+          <div className={DeleteCardCss.ButtonContainer}>
+            <button className="btn btn-primary">YES</button>
+            <button className="btn btn-primary">NO</button>
+          </div>
+        </div>
       </div>
     </Popup>
   );

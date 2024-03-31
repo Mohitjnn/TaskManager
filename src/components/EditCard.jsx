@@ -24,7 +24,7 @@ const EditCard = ({ formData, status }) => {
               className="form-control"
               id="Title"
               value={formData.Title}
-              disabled // Disable the input field
+              disabled
             />
           </div>
           <div className={EditCardCss.Inputs}>
@@ -36,7 +36,7 @@ const EditCard = ({ formData, status }) => {
               id="exampleFormControlTextarea1"
               rows="3"
               value={formData.Description}
-              disabled // Disable the textarea
+              disabled
             />
           </div>
           <div className={EditCardCss.Inputs}>
@@ -48,7 +48,7 @@ const EditCard = ({ formData, status }) => {
               className="form-control"
               id="Team"
               value={formData.Team}
-              disabled // Disable the input field
+              disabled
             />
           </div>
           <div className={EditCardCss.Inputs}>
@@ -60,7 +60,7 @@ const EditCard = ({ formData, status }) => {
               className="form-control"
               id="Assignee"
               value={formData.Assignee}
-              disabled // Disable the input field
+              disabled
             />
           </div>
           <div className={EditCardCss.Inputs}>
@@ -89,8 +89,6 @@ const EditCard = ({ formData, status }) => {
               value={status}
             />
           </div>
-
-          {/* Submit button */}
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
