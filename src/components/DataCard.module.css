@@ -1,0 +1,13 @@
+.Card {
+  height: 50rem
+}
+
+
+.blue {
+  background-color: #0d6efd;
+  color: aliceblue;
+  width: fit-content;
+  height: fit-content;
+  padding: 3px;
+  border-radius: 10%;
+}

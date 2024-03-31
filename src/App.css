@@ -1,0 +1,112 @@
+  body {
+    background: rgb(238, 199, 254);
+    background: linear-gradient(150deg, rgba(238, 199, 254, 1) 0%, rgba(225, 197, 243, 1) 42%, rgba(157, 208, 236, 1) 100%);
+    padding: 0% 2%;
+    height: 100vh;
+  }
+
+  .Header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .MainContent {
+    height: fit-content;
+    width: 99%;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 2%;
+    box-shadow: 1px 3px 5px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContentHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 2rem;
+    height: fit-content;
+  }
+
+  .dropDowns {
+    width: 10rem;
+    height: fit-content;
+    background-color: aliceblue;
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: row; */
+  }
+
+  .dropDownButton {
+
+    background-color: aliceblue;
+    color: gray;
+    font-size: 15;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .FiltersContainer {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: inherit;
+  }
+
+  .MainBody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2% 0% 0% 0%;
+  }
+
+  .newTask {
+    width: 10rem;
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+  }
+
+  .cardContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .Date {
+    background-color: aliceblue;
+    color: gray;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: .2rem .8rem;
+  }
+
+  .titles {
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+  }
+
+  .flexRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0px 20px;
+  }
