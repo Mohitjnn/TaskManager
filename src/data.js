@@ -5,7 +5,7 @@ export const MainCardData = [
     Data: [
       {
         Title: "Task 1",
-        Priority: "P0",
+        Priority: "P1",
         Description:
           "Nunc quis nisi vel justo ultrices malesuada. Nulla facilisi. Donec non sollicitudin elit, quis venenatis mauris.",
         Assignee: "Pravin",
