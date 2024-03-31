@@ -110,3 +110,20 @@
     justify-content: start;
     gap: 0px 20px;
   }
+
+  .center-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Ensure that the container takes up the full height */
+  }
+
+  /* Override default styles for the popup */
+  .popup-content {
+    border-radius: 5%;
+    max-width: 33%;
+    /* Adjust as needed */
+    max-height: 100%;
+    /* Adjust as needed */
+  }

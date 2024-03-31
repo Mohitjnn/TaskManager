@@ -2,6 +2,9 @@ import "./App.css";
 import MainCard from "./components/MainCard";
 import { MainCardData } from "./data";
 import DropDown from "./components/DropDown";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+import AddTaskForm from "./components/AddTaskForm";
 
 function App() {
   return (
@@ -42,9 +45,19 @@ function App() {
               className="Date"
             />
           </div>
-          <button type="button" className="btn btn-primary newTask">
-            Add Task
-          </button>
+          <Popup
+            trigger={
+              <button type="button" className="btn btn-primary newTask">
+                Add Task
+              </button>
+            }
+            position="center center"
+            modal
+            nested
+            className="center-popup"
+          >
+            <AddTaskForm />
+          </Popup>
         </header>
         <div className="flexRow">
           <span>Sort by: </span>
