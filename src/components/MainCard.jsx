@@ -3,7 +3,6 @@ import DataCard from "./DataCard";
 
 const MainCard = ({ MainCardData }) => {
   // Function to sort tasks by priority (P0 before P1, and P1 before P2)
-
   const sortByPriority = (a, b) => {
     if (a.Priority === b.Priority) {
       return 0;
@@ -18,8 +17,8 @@ const MainCard = ({ MainCardData }) => {
     }
   };
 
-  // Sort the cards by priority
-  MainCardData.Data.sort(sortByPriority);
+  // Create a new array with sorted elements
+  const sortedData = [...MainCardData.Data].sort(sortByPriority);
 
   return (
     <div
@@ -34,7 +33,7 @@ const MainCard = ({ MainCardData }) => {
       </div>
       <div className="card-body cardContainer">
         {/* Render DataCard components for each task */}
-        {MainCardData.Data.map((data) => (
+        {sortedData.map((data) => (
           <DataCard data={data} key={data.Title} status={MainCardData.status} />
         ))}
       </div>

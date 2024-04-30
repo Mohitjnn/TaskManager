@@ -1,19 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { MainCardData } from "../data";
 
-const pendingCard = MainCardData.find((item) => item.Title === "Pending");
-
+const initialState = MainCardData;
 export const addCardDataSlice = createSlice({
   name: "addCardData",
-  initialState: {
-    value: "",
-  },
+  initialState,
   reducers: {
     addData: (state, action) => {
-      console.log("Reducer called"); // Add this line
-      const newData = [...pendingCard.Data, action.payload];
-      pendingCard.Data = newData;
-      console.log(pendingCard.Data);
+      const pendingCard = state.find((item) => item.Title === "Pending");
+      pendingCard.Data.push(action.payload);
     },
   },
 });

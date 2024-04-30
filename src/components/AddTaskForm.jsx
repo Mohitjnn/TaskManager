@@ -35,7 +35,15 @@ const AddTaskForm = () => {
     // Store the new data in state
     setNewTaskData(newData);
 
-    dispatch(addData(newData));
+    dispatch(
+      addData({
+        Title: newData.Title,
+        Description: newData.Description,
+        Team: newData.Team,
+        Assignee: newData.Assignee,
+        Priority: newData.Priority,
+      })
+    );
 
     titleRef.current.value = "";
     descriptionRef.current.value = "";

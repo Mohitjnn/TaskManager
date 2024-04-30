@@ -1,12 +1,15 @@
 import "./App.css";
 import MainCard from "./components/MainCard";
-import { MainCardData } from "./data";
+// import { MainCardData } from "./data";
 import DropDown from "./components/DropDown";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import AddTaskForm from "./components/AddTaskForm";
+import { useSelector } from "react-redux";
 
 function App() {
+  const MainCardData = useSelector((state) => state.addCardData);
+
   return (
     <>
       <header className="Header">
