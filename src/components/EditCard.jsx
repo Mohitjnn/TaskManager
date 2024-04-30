@@ -71,7 +71,7 @@ const EditCard = ({ formData, status }) => {
               className="form-select"
               id="Priority"
               aria-label="Default select example"
-              value={formData.Priority}
+              // value={formData.Priority}
             >
               <option value="P0">P0</option>
               <option value="P1">P1</option>
