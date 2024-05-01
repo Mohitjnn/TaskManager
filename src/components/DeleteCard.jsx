@@ -1,8 +1,16 @@
 import React from "react";
 import Popup from "reactjs-popup";
-import AddTaskForm from "./AddTaskForm";
 import DeleteCardCss from "./DeleteCard.module.css";
-const DeleteCard = () => {
+import { useDispatch } from "react-redux";
+import { deleteData } from "../store/addTask";
+
+const DeleteCard = ({ card }) => {
+  const dispatch = useDispatch();
+
+  const handleDelete = () => {
+    dispatch(deleteData(card)); // Dispatching the deleteData action with the card data
+  };
+
   return (
     <Popup
       trigger={<button className="Btn">Delete</button>}
@@ -18,7 +26,9 @@ const DeleteCard = () => {
         <div className="flexRow" style={{ justifyContent: "space-between" }}>
           <h5>Task 1</h5>
           <div className={DeleteCardCss.ButtonContainer}>
-            <button className="btn btn-primary">YES</button>
+            <button className="btn btn-primary" onClick={handleDelete}>
+              YES
+            </button>
             <button className="btn btn-primary">NO</button>
           </div>
         </div>

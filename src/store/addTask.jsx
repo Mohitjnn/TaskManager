@@ -10,8 +10,19 @@ export const addCardDataSlice = createSlice({
       const pendingCard = state.find((item) => item.Title === "Pending");
       pendingCard.Data.push(action.payload);
     },
+    deleteData: (state, action) => {
+      return state.map((card) => {
+        if (card.Data.some((item) => item.Title === action.payload)) {
+          return {
+            ...card,
+            Data: card.Data.filter((item) => item.Title !== action.payload),
+          };
+        }
+        return card;
+      });
+    },
   },
 });
 
-export const { addData } = addCardDataSlice.actions;
+export const { addData, deleteData } = addCardDataSlice.actions;
 export default addCardDataSlice.reducer;

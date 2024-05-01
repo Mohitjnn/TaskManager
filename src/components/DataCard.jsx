@@ -45,7 +45,7 @@ const DataCard = ({ data, status }) => {
           >
             {
               <div className={DataCardCss.actionbuttonscontainer}>
-                <DeleteCard />
+                <DeleteCard card={data.Title} />
                 <div className={DataCardCss.border}></div>
                 <EditCard formData={data} status={status} />
               </div>
