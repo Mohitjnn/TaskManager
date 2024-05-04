@@ -24,7 +24,7 @@ const DeleteCard = ({ card }) => {
         </header>
         <span>Do You Wish To Delete The Task</span>
         <div className="flexRow" style={{ justifyContent: "space-between" }}>
-          <h5>Task 1</h5>
+          <h5>{card}</h5>
           <div className={DeleteCardCss.ButtonContainer}>
             <button className="btn btn-primary" onClick={handleDelete}>
               YES
